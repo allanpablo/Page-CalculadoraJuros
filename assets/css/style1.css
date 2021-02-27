@@ -1,0 +1,113 @@
+.carousel-indicators li {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 0px) {
+    #logo2 {
+      max-width: 150px;
+      height: auto;
+    }
+
+    #banner {
+      height: 170px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 576px) {
+    #logo2 {
+      max-width: 150px;
+      height: auto;
+    }
+
+    #banner {
+      height: 270px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #logo2 {
+      max-width: 200px;
+      height: auto;
+    }
+
+    #banner {
+      height: 270px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #logo2 {
+      max-width: 200px;
+      height: auto;
+    }
+
+    #banner {
+      height: 320px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    #logo2 {
+      max-width: 250px;
+      height: auto;
+    }
+
+    #banner {
+      height: 350px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #logo2 {
+      max-width: 250px;
+      height: auto;
+    }
+
+    #banner {
+      height: 400px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    #logo2 {
+      max-width: 9%;
+      height: auto;
+    }
+
+    #banner {
+      height: 290px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    #logo2 {
+      max-width: 15%;
+      height: auto;
+    }
+
+    #banner {
+      height: 350px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    #logo2 {
+      max-width: 15%;
+      height: auto;
+    }
+
+    #banner {
+      height: 500px;
+      max-width: auto;
+    }
+  }

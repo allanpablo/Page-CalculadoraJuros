@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+  <!-- Teste -->
+
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Wish Tech</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/icon.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style2.css" rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/line-awesome/css/line-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="./assets/js/calculaJuros.js"></script>
+    <script src="./assets/js/vendaDebito.js"></script>
+  </head>
+  <body class="fadeIn" style="background-color: rgba(0, 0, 0, .8);">
+    <div>
+      <a href= "index.html">
+        <img id="logo2" class="rounded mx-auto " src="./assets/img/WISH TECH sem fundo 28122020.png" />
+      </a>
+    </div>
+    <br>
+  <body onload="myFunction('myTable', 1)">
+    <!-- ======= Hero Section ======= -->
+    <section class="w-100" id="hero" style="width: 100%;">
+      <div class="w-100 hero-container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-12 col-xl-12 col-md-12 col-sm-12">
+            <h1 id="titulo">
+              Simule a sua compra no cartão
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= Range Section ======= -->
+      <section id="range" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-end">
+            <div class="col-lg-11">
+              <div class="row">
+                <div
+                  class="col-lg-4 col-md-4 col-12 d-md-flex align-items-md-stretch"
+                >
+                  <div class="count-box py-5">
+                    <div class="slidecontainer">
+                      <h4 style="padding-left: 30px;">Valor da Compra:</h4>
+                      <div class="row text-left">
+                        <div class="col-sm-1 col-md-1 col-1">
+                          <h5
+                            class="font-weight-bold text-primary ml-2 mt-1"
+                            style="padding-left: 22px;"
+                          >
+                            R$&nbsp;<span id="demo1"></span>
+                          </h5>
+                          
+                        </div>
+                      </div>
+
+
+                      <input
+                        type="range"
+                        min="0000"
+                        max="20000"
+                        step="50"
+                        value="0"
+                        class="custom-range slider1"
+                        id="myRange1"
+                        name="emprestimo"
+                        style="padding-left: 30px;"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-4 col-12 d-md-flex align-items-md-stretch"
+                >
+                  <div class="count-box py-5">
+                    <div class="slidecontainer">
+                      <h4 style="padding-left: 29px;">Valor de Entrada:</h4>
+                      <div class="row text-left">
+                        <div class="col-sm-1 col-md-1 col-1">
+                          <h5
+                            class="font-weight-bold text-primary ml-2 mt-1"
+                            style="padding-left: 30px;">
+                            R$&nbsp;<span id="demo3"></span>
+                          </h5>
+                        </div>
+                      </div>
+
+                      <input
+                        type="range"
+                        min="0"
+                        max="20000"
+                        step="50"
+                        value="0"
+                        class="custom-range slider2"
+                        id="myRange3"
+                        style="padding-left: 30px;"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-4 col-12 d-md-flex align-items-md-stretch"
+                >
+                  <div class="count-box py-5">
+                    <div class="slidecontainer">
+                      <h4 style="padding-left: 30px;">
+                        Qtd de Parcelas:
+                      </h4>
+                      <div class="row text-left">
+                        <div class="col-sm-1 col-md-1 col-1">
+                          <h5
+                          class="font-weight-bold text-primary ml-2 mt-1"
+                          style="padding-left: 30px;">
+                          <span id="demo2"></span>&nbsp;Parcela(s)
+                          </h5>
+                        </div>
+                      </div>
+
+
+                      <input
+                        type="range"
+                        min="1"
+                        max="12"
+                        step="1"
+                        value="1"
+                        class="custom-range"
+                        id="myRange2"
+                        style="padding-left: 30px;"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12	col-md-12	col-lg-12	col-xl-12">
+                  <div class="row">
+                    <div class="col-sm-3	col-md-3	col-lg-3	col-xl-3"  ></div>
+                      <div class="col-sm-6	col-md-6	col-lg-6	col-xl-6 " >
+                        <h5 class="mb-0">
+                        <button
+                          class="btn btn-block btn-md btn-sm btn-lg btn-xl  btn-success" 
+                          id="simular"
+                          onclick="calculaJuros(); myFunction('myTable', 1);vendaDebito();"
+                        >
+                          Simular
+                        </button>
+                        </h5>
+                      </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>-->
+              <div class="container-fluid" id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h4 class="mb-0">
+                      <button class="btn btn-block btn-md btn-sm btn-lg btn-xl  btn-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                      id="simular"
+                      onclick="calculaJuros(); vendaDebito()">
+                        Simulação no Débito
+                      </button>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                      <table class="table text-center">
+                        <thead>
+                          <tr>
+                            <th><h5>Débito</h5></th>
+                            <th><h5>Valor:</h5></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><h5>Total:</h5></td>
+                            <td style="align-content: center;">
+                              <h5>R$&nbsp;<span id="total_debito">0.00</span></h5>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-lg-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid" id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h4 class="mb-0">
+                      <button class="btn btn-block btn-md btn-sm btn-lg btn-xl  btn-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                      id="simular"
+                      onclick="calculaJuros(); myFunction('myTable', 1);">
+                        Simulação no Crédito
+                      </button>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div>
+                    <div class="row">
+                      <div class="col-lg-1"></div>
+                      <div class="col-lg-10">
+                        <table class="table text-center" id="myTable">
+                          <thead>
+                            <tr>
+                              <th><h5>Parcela(s)</h5></th>
+                              <th><h5>Cartão de Crédito</h5></th>
+                            </tr>
+                          </thead>
+                          <tbody></tbody>
+                        </table>
+                      </div>
+                      <div class="col-lg-1"></div>
+                  </div>  
+                      <div class="col-lg-1"></div>
+                      <div class="col-lg-10 text-right">
+                        <h5 hidden>
+                          Total: &nbsp;&nbsp;&nbsp;R$&nbsp;<span id="total_credito"
+                            >0.00</span
+                          >
+                        </h5>
+                      </div>
+                      <div class="col-lg-1"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- End Range Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container" data-aos="fade-in">
+          <div class="text-center">
+            <h3></h3>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+    </main>
+    <!-- End #main -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!--Script Sliderse e Função MyFunction-->
+    <script type="text/javascript">
+
+        $('.slider1').on('input', function(){
+        $('.range1').html($('.slider1').val());
+        $('.slider2').attr('max', $('.slider1').val());
+      });
+      $('.slider2').on('input', function(){
+        $('.range2').html($('.slider2').val());
+      });
+      
+      var slider1 = document.getElementById("myRange1"); //Atribui myRange1 como slider1
+      var slider2 = document.getElementById("myRange2"); //Atribui myRange2 como slider2
+      var slider3 = document.getElementById("myRange3"); //Atribui myRange3 como slider3
+
+      var output1 = document.getElementById("demo1"); //Atribuindo demo1 commo saída output1
+      var output2 = document.getElementById("demo2"); //Atribuindo demo2 commo saída output2
+      var output3 = document.getElementById("demo3"); //Atribuindo demo3 commo saída output3
+
+      output1.innerHTML = slider1.value; //Atribuindo valor do slider1 à output1.innerHTML
+      output2.innerHTML = slider2.value; //Atribuindo valor do slider2 à output2.innerHTML
+      output3.innerHTML = slider3.value; //Atribuindo valor do slider3 à output3.innerHTML
+
+      slider1.oninput = function () {
+        output1.innerHTML = this.value;
+      };
+
+      slider2.oninput = function () {
+        output2.innerHTML = this.value;
+      };
+
+      slider3.oninput = function () {
+        output3.innerHTML = this.value;
+      };
+
+      let tot;
+      let totDebito;
+      let men = 0;
+      let saida_total_debito;
+      let saida_total_credito;
+
+      function myFunction(_idTab, _linhaPersistente) { //Função myFunction recebendo nome da tabela e linha persistente por parâmetro
+
+        
+        var numeroParcelas = output2.innerHTML; //Coleta Número de parcelas
+        var i; //Inicializando variável i
+
+        if ($("myTable").is(':empty')){ //Se a tabela estiver vazia
+          alert('Tabela vazia!'); //Alerta - Vazia
+        } else {
+          var linhas = document.getElementById("myTable").rows; //Coleta quantidade de linhas da tabela myTable
+          var i = 0;
+          for (i = linhas.length-1; i>=0; i--){ //Faça i igual a quantidade de linhas da tabela menos 1; i>=0; i++;
+            if (i != (_linhaPersistente-1) ){ //Se i for diferente da linha Persistente
+                document.getElementById("myTable").deleteRow(i); //Delete linha
+            }
+          }
+
+          for (i = 1; i <= numeroParcelas; i++) { //Faça i=1; aonde i deverá ser <= ao némero de parcelas; somando i = i +i;
+            var table = document.getElementById("myTable"); //Definindo Tabela
+            var row = table.insertRow(-1); // Definindo Posição da inserção da linha da tabela
+            var cell1 = row.insertCell(0); //Definindo variável para inserção de valor na célula 1
+            var cell2 = row.insertCell(1); //Definindo variável para inserção de valor na célula 2
+            //var cell3 = row.insertCell(2); //Definindo variável para inserção de valor na célula 3
+
+            cell1.innerHTML = "<h5>"+i+"</h5>"; //Inserindo valor da célula 1
+            cell2.innerHTML = "<h5>R$&nbsp;<span id='mensal'>"+parseFloat(men).toFixed(2)+"</span></h5>"; //Inserindo valor da célula 2
+           // cell3.innerHTML = "<h5>R$&nbsp;<span id='mensal'>"+parseFloat(men).toFixed(2)+"</span></h5>"; //Inserindo valor da célula 3
+          }
+        } 
+      }
+
+    </script>
+      <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://twitter.com/_allanpablo" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <!--<a href="" class="facebook"><i class="bx bxl-facebook"></i></a>-->
+        <a href="https://www.instagram.com/_allanpablo/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=5584999518784&text&app_absent=0" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/allan-pablo/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Loja WishTech</span></strong>. Todos os Direitos Reservados
+      </div>
+      <div class="credits">
+        Criado por ApK pela <a href="https://merakisolucoes.com/">Meraki Soluções</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  </body>
+</html>

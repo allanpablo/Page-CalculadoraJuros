@@ -1,0 +1,233 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+button,
+a,
+p,
+div {
+  text-align: center;
+  
+  font-family: "Apple font", sans-serif;
+
+  color: beige;
+}
+
+strong{
+  color:  #00DE4B;
+}
+
+
+
+
+.fadeIn {
+ -webkit-animation: fadeIn 3s ease-in-out;
+ -moz-animation: fadeIn 3s ease-in-out;
+ -o-animation: fadeIn 3s ease-in-out;
+ animation: fadeIn 3s ease-in-out;
+}
+
+footer{
+  padding-top: 35px;
+}
+
+/*--------------------------------------------------------------
+# btn-simular
+--------------------------------------------------------------*/
+
+.btn-simular {
+  color: #fff;
+  background-color: #000000;
+  border-color:  #07e912;
+}
+
+.btn-simular:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color:  #07e912;
+}
+
+.btn-simular:focus,
+.btn-simular.focus {
+  color: #fff;
+  background-color: #000000;
+  border-color:  #07e912;
+  box-shadow: 0 0 0 0.2rem rgba(11, 236, 41, 0.5);
+}
+
+.btn-simular.disabled,
+.btn-simular:disabled {
+  color: #fff;
+  background-color:  #07e912;
+  border-color: #07e912;
+}
+
+.btn-simular:not(:disabled):not(.disabled):active,
+.btn-simular:not(:disabled):not(.disabled).active,
+.show > .btn-simular.dropdown-toggle {
+  color: #fff;
+  background-color:  #07e912;
+  border-color:  #07e912;
+}
+
+.btn-simular:not(:disabled):not(.disabled):active:focus,
+.btn-simular:not(:disabled):not(.disabled).active:focus,
+.show > .btn-simular.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(17, 206, 17, 0.5);
+}
+
+  #logo2 {
+    margin-top: -10px;
+    max-width: 150px;
+    height: auto;
+   
+  }
+
+
+  @media (min-width: 0px) {
+    #logo2 {
+      margin-top: 5%;
+      max-width: 150px;
+      height: auto;
+
+    }
+
+    #banner {
+      height: 170px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 576px) {
+    #logo2 {
+      margin-top: 10%;
+      max-width: 150px;
+      height: auto;
+    
+    }
+
+    #banner {
+      height: 270px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #logo2 {
+      margin-top: 10%;
+      max-width: 200px;
+      height: auto;
+    
+    }
+
+    #banner {
+      height: 270px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 992px) {
+    #logo2 {
+      margin-top: 10%;
+      max-width: 200px;
+      height: auto;
+    
+    }
+
+    #banner {
+      height: 320px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1080px) {
+    #logo2 {
+      max-width: 250px;
+      height: auto;
+      margin-top: 10%;
+    
+    }
+
+    #banner {
+      height: 350px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #logo2 {
+      max-width: 250px;
+      height: auto;
+      margin-top: 10%;
+    
+    }
+
+    #banner {
+      height: 400px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    #logo2 {
+      max-width: 300px;
+      height: auto;
+      margin-top: 10%;
+    
+    }
+
+    #banner {
+      height: 290px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    #logo2 {
+      max-width: 325px;
+      height: auto;
+      margin-top: 5%;
+    
+    }
+
+    #banner {
+      height: 350px;
+      max-width: auto;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    #logo2 {
+      max-width: 15%;
+      height: auto;
+      margin-top: 5%;
+    
+    }
+
+    #banner {
+      height: 500px;
+      max-width: auto;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+      
